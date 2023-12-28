@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <nav className="w-2/5 z-20 flex flex-row rounded-3xl fixed mt-8 top-0 ml-[550px] justify-around p-2 bg-primary bg-opacity-80">
+    <nav className="w-96 z-20 flex rounded-3xl fixed mt-8 justify-self-center justify-around p-2 bg-primary bg-opacity-80">
       <a href="#home" className="text-white">
         Home
       </a>

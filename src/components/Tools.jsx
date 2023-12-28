@@ -14,8 +14,8 @@ import { styles } from "../styles";
 
 const Tools = () => {
   return (
-    <section className="flex flex-row h-[50vh] ml-24" id="toolkit">
-      <div className="grid grid-cols-6 w-1/2 h-[30vh]">
+    <section className="flex flex-row justify-between" id="toolkit">
+      <div className="grid grid-cols-6 w-3/5 gap-8 bg-red-400">
         <img
           src={html}
           className="border-primary border-2 w-32 h-32 rounded-3xl p-2 bg-primary"
@@ -53,7 +53,7 @@ const Tools = () => {
           className="border-primary border-2 w-32 h-32 rounded-3xl p-2"
         />
       </div>
-      <h1 className={`${styles.heroHeadText} w-1/3 my-12`}>My Toolkit</h1>
+      <h1 className={`${styles.heroHeadText}`}>Toolkit</h1>
     </section>
   );
 };
