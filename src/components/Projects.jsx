@@ -6,7 +6,7 @@ const Projects = () => {
   const slides = ['GoBrew', 'Golf Project', 'Portfolio Website', 'Frontend with API call'];
 
   return (
-    <section className="flex flex-col gap-y-12" id="projects">
+    <section className="flex flex-col gap-y-12 scroll-mt-40" id="projects">
       <h1 className={`${styles.heroHeadText} mx-auto`}>Projects</h1>
       <Carousel slides={slides} />
     </section>

@@ -2,11 +2,17 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className="flex flex-row justify-center">
-      <div className="flex flex-col space-around items-center mb-12">
-        <p className="text-primary">Linkedin</p>
-        <p className="text-primary">Github</p>
-        <p className="text-primary">Email: cmpark@umich.edu</p>
+    <section id="contact" className="flex flex-row justify-center">
+      <div className="flex flex-row justify-around items-center mb-20 w-2/3">
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-primary text-2xl font-medium">
+          Linkedin
+        </a>
+        <a href="https://www.github.com" target="_blank" rel="noopener noreferrer" className="text-primary text-2xl font-medium">
+          Github
+        </a>
+        <a href="mailto:cmpark@umich.edu" className="text-primary text-2xl font-medium">
+          cmpark@umich.edu
+        </a>
       </div>
     </section>
   );

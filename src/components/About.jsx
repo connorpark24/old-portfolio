@@ -4,12 +4,12 @@ import UMlogo from "../assets/UMlogo.png";
 
 const About = () => {
   return (
-    <section className="flex flex-col gap-y-12 md:flex-row justify-between items-center" id="about">
+    <section className="flex flex-col gap-y-12 md:flex-row justify-between items-center scroll-mt-48" id="about">
       <img
         src={UMlogo}
         className="lg:w-[400px] lg:h-[450px] md:w-[300px] md:h-[350px] w-[400px] h-[450px] rounded-[50px]"
       />
-      <div className="ml-4 first-line:flex flex-col gap-y-4">
+      <div className="ml-4 flex flex-col gap-y-4">
         <h1 className={`${styles.heroHeadText} text-right`}>Education</h1>
         <p className={`text-4xl text-primary text-right`}>
           University of Michigan, Computer Science B.S.E
@@ -20,7 +20,9 @@ const About = () => {
           Organization
         </p>
         <p className="text-primary text-right text-xl">
-          Activities: V1 Michigan, UpRound Ventures
+          Activities: {" "}
+          <a href="https://v1michigan.com/" target="_blank" rel="noopener noreferrer" className="font-bold">V1 Michigan</a>, {" "}
+          <a href="https://www.upround.vc/" target="_blank" rel="noopener noreferrer" className="font-bold">UpRound Ventures</a>
         </p>
       </div>
     </section>

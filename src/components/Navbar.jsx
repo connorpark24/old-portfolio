@@ -2,7 +2,7 @@ const Navbar = () => {
   return (
     <div className="flex justify-center">
       <nav className="w-[480px] md:w-[750px] z-20 flex rounded-3xl fixed mt-8 justify-self-center justify-around items-center p-2 bg-primary bg-opacity-80">
-        <a href="#home" className="text-white text-md">
+        <a href="#" className="text-white text-md">
           Home
         </a>
         <a href="#about" className="text-white text-md">
