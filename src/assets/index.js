@@ -1,47 +1,28 @@
-import github from "./tech/github.png";
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
-import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
-
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import html from "./html.png";
+import css from "./css.png";
+import javascript from "./javascript.png";
+import reactjs from "./reactjs.png";
+import mongodb from "./mongodb.png";
+import github from "./github.png";
+import figma from "./figma.png";
+import tailwind from "./tailwind.png";
+import cpp from "./cpp.png";
+import python from "./python.png";
+import typescript from "./typescript.png"
 
 import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 
 export {
   github,
   css,
-  docker,
+  cpp,
+  python,
   figma,
-  git,
   html,
   javascript,
   mongodb,
-  nodejs,
   reactjs,
-  redux,
   tailwind,
-  typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
   carrent,
-  jobit,
-  tripguide,
+  typescript
 };

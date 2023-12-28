@@ -1,59 +1,37 @@
 import React from "react";
 import {
-  docker,
-  figma,
-  git,
-  html,
+  github,
   css,
+  cpp,
+  python,
+  figma,
+  html,
+  javascript,
   mongodb,
   reactjs,
   tailwind,
-  javascript,
+  typescript,
 } from "../assets";
 import { styles } from "../styles";
 
 const Tools = () => {
+  const tools = [
+    cpp, python, html, css, javascript, typescript, reactjs, mongodb, figma, github, tailwind,
+  ];
+
   return (
-    <section className="flex flex-row justify-between" id="toolkit">
-      <div className="grid grid-cols-6 w-3/5 gap-8 bg-red-400">
-        <img
-          src={html}
-          className="border-primary border-2 w-32 h-32 rounded-3xl p-2 bg-primary"
-        />
-        <img
-          src={css}
-          className="border-primary border-2 w-32 h-32 rounded-3xl p-2 bg-primary"
-        />
-        <img
-          src={javascript}
-          className="border-primary border-2 w-32 h-32 rounded-3xl p-2 bg-primary"
-        />
-        <img
-          src={reactjs}
-          className="border-primary border-2 w-32 h-32 rounded-3xl p-2"
-        />
-        <img
-          src={mongodb}
-          className="border-primary border-2 w-32 h-32 rounded-3xl p-2"
-        />
-        <img
-          src={git}
-          className="border-primary border-2 w-32 h-32 rounded-3xl p-2"
-        />
-        <img
-          src={figma}
-          className="border-primary border-2 w-32 h-32 rounded-3xl p-2"
-        />
-        <img
-          src={tailwind}
-          className="border-primary border-2 w-32 h-32 rounded-3xl p-2"
-        />
-        <img
-          src={docker}
-          className="border-primary border-2 w-32 h-32 rounded-3xl p-2"
-        />
-      </div>
+    <section className="w-full flex flex-col items-center gap-y-4" id="toolkit">
       <h1 className={`${styles.heroHeadText}`}>Toolkit</h1>
+      <div className="grid grid-cols-4 lg:grid-cols-6 gap-4">
+        {tools.map((tool, index) => (
+          <img
+            key={index}
+            src={tool}
+            className="w-24 h-24 rounded-3xl p-2"
+            alt="Tool"
+          />
+        ))}
+      </div>
     </section>
   );
 };

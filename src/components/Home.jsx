@@ -5,7 +5,7 @@ import avatar from "../assets/avatar.png";
 const Home = () => {
   return (
     <section
-      className="w-full flex flex-col md:flex-row justify-between mt-16 items-center"
+      className="w-full flex flex-col gap-y-16 md:flex-row justify-between mt-32 items-center"
       id="home"
     >
       <div className="flex flex-col gap-y-4">
