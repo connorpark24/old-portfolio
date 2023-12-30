@@ -9,7 +9,7 @@ const Home = () => {
     >
       <div className="flex flex-col gap-y-4">
         <h1 className={styles.heroHeadText}>Hi, I'm Connor</h1>
-        <p className={`${styles.heroSubText} text-primary`}>
+        <p className={styles.heroSubText}>
           Student at the University of Michigan
         </p>
         <a href="#contact" className="w-44 h-16 rounded-xl bg-primary flex flex-row items-center p-4 justify-around">

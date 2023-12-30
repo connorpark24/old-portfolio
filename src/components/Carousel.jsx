@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
+import Carrent from "../assets/carrent.png"
 
 const Slide = ({ content }) => (
   <div className="w-[600px] h-[400px] rounded-3xl border-primary border-4 flex flex-col" style={{ animation: 'slideIn 0.5s ease' }}>
-    <div className="h-2/3 bg-red-400">
-      <p>Hello</p>
+    <div className="h-3/5 mx-auto my-auto">
+      <img className="p-4 w-[360px] h-[260px]" src={Carrent}/>
     </div>
-    <div className="h-1/3 p-4">
-      <p className="text-4xl">{content}</p>
-      <p className="text-lg">Project Description</p>
+    <div className="h-2/5 p-4">
+      <p className="text-3xl">{content}</p>
+      <p className="text-md">React, Typescript, Node, Express, MongoDB, Redux, Spotify Web API</p>
     </div>
   </div>
 );

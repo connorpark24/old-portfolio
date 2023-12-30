@@ -11,13 +11,12 @@ const About = () => {
       />
       <div className="ml-4 flex flex-col gap-y-4">
         <h1 className={`${styles.heroHeadText} text-right`}>Education</h1>
-        <p className={`text-4xl text-primary text-right`}>
+        <p className={`${styles.heroSubText} text-right`}>
           University of Michigan, Computer Science B.S.E
         </p>
         <p className="text-primary text-right text-xl">
           Courses: Programming and Intro Data Structures, Discrete Math,
-          Microprocessors and Toys, Data Structures and Algorithms, Computer
-          Organization
+          Microprocessors and Toys, Data Structures and Algorithms, Intro to Computer Organization
         </p>
         <p className="text-primary text-right text-xl">
           Activities: {" "}
