@@ -1,7 +1,7 @@
 const Navbar = () => {
   return (
     <div className="flex justify-center">
-      <nav className="w-[480px] md:w-[750px] z-20 flex rounded-3xl fixed mt-8 justify-self-center justify-around items-center p-2 bg-primary bg-opacity-80">
+      <nav className="w-[450px] md:w-[600px] z-20 flex rounded-3xl fixed mt-8 justify-self-center justify-around items-center p-2 bg-primary bg-opacity-80">
         <a href="#" className="text-white text-md">
           Home
         </a>
@@ -14,9 +14,9 @@ const Navbar = () => {
         <a href="#toolkit" className="text-white text-md">
           Tools
         </a>
-        <a href="#contact" className="text-white text-md">
+        {/* <a href="#contact" className="text-white text-md">
           Contact
-        </a>
+        </a> */}
       </nav>
     </div>
   );

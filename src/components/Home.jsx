@@ -12,17 +12,19 @@ const Home = () => {
         <p className={styles.heroSubText}>
           Student at the University of Michigan
         </p>
-        <a href="#contact" className="w-44 h-16 rounded-xl bg-primary flex flex-row items-center p-4 justify-around">
+        <a
+          href="#contact"
+          className="w-44 h-14 rounded-xl bg-primary flex flex-row items-center p-4 justify-around"
+        >
           <p className="text-white text-xl">Contact</p>
-          <button className="text-3xl text-white">{">"}</button>
+          <p className="text-3xl text-white">{">"}</p>
         </a>
       </div>
 
       <img
         src={avatar}
-        className="xl:w-[500px] xl:h-[500px] lg:w-[400px] lg:h-[400px] md:w-[300px] md:h-[300px]"
+        className="xl:w-[500px] xl:h-[500px] lg:w-[400px] lg:h-[400px] w-[300px] h-[300px]"
       />
-
     </section>
   );
 };
