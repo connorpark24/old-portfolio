@@ -1,7 +1,18 @@
 import Carrent from "../assets/carrent.png";
 
 const Projects = () => {
-  const slides = ["GoBrew", "Golf Ball CV Detection"];
+  const projects = [
+    {
+      name: "GoBrew",
+      tech: "React Native, Typescript, Supabase, Zustand",
+      description: "Description for GoBrew project.",
+    },
+    {
+      name: "Spotify Playlist Generator",
+      tech: "React, Spotify Web API",
+      description: "Description for Spotify API Project",
+    },
+  ];
 
   return (
     <section
@@ -11,8 +22,8 @@ const Projects = () => {
       <h1 className="lg:text-7xl md:text-5xl text-3xl mx-auto">Projects</h1>
       <div className="w-4/5 flex items-center">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full">
-          {slides.map((index) => (
-            <Slide key={index} content={slides[index]} />
+          {projects.map((project, index) => (
+            <Slide key={index} project={project} />
           ))}
         </div>
       </div>
@@ -20,16 +31,15 @@ const Projects = () => {
   );
 };
 
-const Slide = ({ content }) => (
-  <div className="h-[400px] shadow-lg rounded-xl flex flex-col font-light">
-    <div className="h-3/5 mx-auto my-auto">
-      <img className="p-4 w-[300px] h-[200px]" src={Carrent} />
+const Slide = ({ project }) => (
+  <div className="h-[400px] shadow-2xl shadow-primary/20 rounded-xl flex flex-col font-light">
+    <div className="h-3/5">
+      <img className="p-4 h-full object-cover mx-auto my-auto" src={Carrent} />
     </div>
-    <div className="h-2/5 p-4">
-      <p className="text-3xl">{content}</p>
-      <p className="text-md">
-        React, Typescript, Node, Express, MongoDB, Redux, Spotify Web API
-      </p>
+    <div className="h-2/5 p-4 flex flex-col">
+      <p className="text-3xl">{project.name}</p>
+      <p className="text-lg mt-1">{project.tech}</p>
+      <p className="text-md">{project.description}</p>
     </div>
   </div>
 );

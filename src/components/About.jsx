@@ -3,7 +3,7 @@ import umlogo from "../assets/umlogo.SVG";
 const About = () => {
   return (
     <section
-      className="flex flex-col md:flex-row justify-between items-center scroll-mt-48 px-12 md:px-20 font-light text-primary py-16"
+      className="flex flex-col md:flex-row justify-between items-center scroll-mt-48 px-12 md:px-20 font-light text-primary py-8"
       id="about"
     >
       <div className="w-2/5">

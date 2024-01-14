@@ -8,7 +8,7 @@ import figma from "../assets/figma.png";
 import tailwind from "../assets/tailwind.png";
 import cpp from "../assets/cpp.png";
 import python from "../assets/python.png";
-import typescript from "../assets/typescript.png"
+import typescript from "../assets/typescript.png";
 
 const technologies = [
   {
@@ -36,7 +36,7 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: "React JS",
+    name: "React",
     icon: reactjs,
   },
   {
@@ -52,11 +52,9 @@ const technologies = [
     icon: github,
   },
   {
-    name: "Tailwind CSS",
+    name: "Tailwind",
     icon: tailwind,
   },
-  
 ];
-
 
 export { technologies };

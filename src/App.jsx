@@ -4,7 +4,6 @@ import Navbar from "./components/Navbar.jsx";
 import About from "./components/About.jsx";
 import Projects from "./components/Projects.jsx";
 import Tools from "./components/Tools.jsx";
-import Contact from "./components/Contact.jsx";
 
 const App = () => {
   return (
@@ -15,7 +14,6 @@ const App = () => {
         <About />
         <Projects />
         <Tools />
-        {/* <Contact /> */}
       </div>
     </BrowserRouter>
   );
