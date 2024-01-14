@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import umlogo from "../assets/umlogo.SVG";
+import umlogo from "../assets/umlogo.svg";
 
 const About = () => {
   useEffect(() => {
