@@ -10,7 +10,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Navbar />
-      <div className="bg-white min-h-screen px-8 md:px-16 lg:px-24 xl:px-40 flex flex-col gap-y-20 space-between">
+      <div className="bg-white min-h-screen w-screen flex flex-col">
         <Home />
         <About />
         <Projects />

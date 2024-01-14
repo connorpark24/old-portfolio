@@ -1,17 +1,16 @@
-import React from "react";
-import { styles } from "../styles";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 const Contact = () => {
   return (
-    <section id="contact" className="flex flex-col gap-y-10 items-center">
-      <h1 className={styles.heroHeadText}>Contact</h1>
-      <div className="flex flex-col gap-y-2 md:flex-row justify-around items-center mb-20 w-2/3">
+    <section
+      id="contact"
+      className="flex flex-col gap-y-10 items-center text-primary font-light"
+    >
+      <h1 className="lg:text-7xl md:text-5xl text-3xl mx-auto">Contact</h1>
+      <div className="flex flex-col md:flex-row justify-around items-center mb-20 w-2/3 lg:text-2xl md:text-lg text-md">
         <a
           href="https://www.linkedin.com"
           target="_blank"
           rel="noopener noreferrer"
-          className={`${styles.heroSubText} flex flex-row items-center gap-1`}
+          className="flex flex-row items-center gap-1"
         >
           Linkedin
           <svg viewBox="0 0 24 24" className="h-8 w-8 fill-primary">
@@ -22,7 +21,7 @@ const Contact = () => {
           href="https://www.github.com"
           target="_blank"
           rel="noopener noreferrer"
-          className={`${styles.heroSubText} flex flex-row items-center gap-1`}
+          className="flex flex-row items-center gap-1"
         >
           Github
           <svg
@@ -39,7 +38,7 @@ const Contact = () => {
         </a>
         <a
           href="mailto:cmpark@umich.edu"
-          className={`${styles.heroSubText} flex flex-row items-center gap-1`}
+          className="flex flex-row items-center gap-1"
         >
           cmpark@umich.edu
           <svg

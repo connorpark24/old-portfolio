@@ -14,9 +14,6 @@ const Navbar = () => {
         <a href="#toolkit" className="text-white text-md">
           Tools
         </a>
-        {/* <a href="#contact" className="text-white text-md">
-          Contact
-        </a> */}
       </nav>
     </div>
   );
