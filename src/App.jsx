@@ -15,7 +15,7 @@ const App = () => {
         <About />
         <Projects />
         <Tools />
-        <Contact />
+        {/* <Contact /> */}
       </div>
     </BrowserRouter>
   );

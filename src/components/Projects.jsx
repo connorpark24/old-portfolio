@@ -5,7 +5,7 @@ const Projects = () => {
 
   return (
     <section
-      className="flex flex-col gap-y-12 scroll-mt-40 px-8 md:px-16 font-light text-primary items-center"
+      className="flex flex-col gap-y-12 scroll-mt-40 px-8 md:px-16 py-12 font-light text-primary items-center"
       id="projects"
     >
       <h1 className="lg:text-7xl md:text-5xl text-3xl mx-auto">Projects</h1>
