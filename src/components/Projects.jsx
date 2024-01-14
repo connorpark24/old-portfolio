@@ -16,12 +16,12 @@ const Projects = () => {
 
   return (
     <section
-      className="flex flex-col gap-y-12 scroll-mt-40 px-8 md:px-16 py-12 font-light text-primary items-center"
+      className="flex flex-col gap-y-12 lg:scroll-mt-40 px-8 md:px-16 lg:px-24 py-12 lg:py-24 font-light text-primary items-center"
       id="projects"
     >
-      <h1 className="lg:text-7xl md:text-5xl text-3xl mx-auto">Projects</h1>
-      <div className="w-4/5 flex items-center">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full">
+      <h1 className="lg:text-7xl md:text-6xl text-5xl mx-auto">Projects</h1>
+      <div className="w-full flex items-center">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <Slide key={index} project={project} />
           ))}
@@ -37,9 +37,9 @@ const Slide = ({ project }) => (
       <img className="p-4 h-full object-cover mx-auto my-auto" src={Carrent} />
     </div>
     <div className="h-2/5 p-4 flex flex-col">
-      <p className="text-3xl">{project.name}</p>
-      <p className="text-lg mt-1">{project.tech}</p>
-      <p className="text-md">{project.description}</p>
+      <p className="lg:text-3xl text-2xl">{project.name}</p>
+      <p className="text-lg">{project.tech}</p>
+      <p className="text-md mt-2">{project.description}</p>
     </div>
   </div>
 );
