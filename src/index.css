@@ -11,3 +11,31 @@
   font-family: "Lato", sans-serif;
   scroll-behavior: smooth;
 }
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-from-left {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+/* Initial state of the text */
+.move-text {
+  transition: transform 1s, opacity 1s;
+  transform: translateX(100%);
+  opacity: 1;
+}
+
+/* Active state */
+.move-text.active {
+  transform: translateX(0); /* Adjust as needed */
+  opacity: 1;
+}

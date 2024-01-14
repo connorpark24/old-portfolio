@@ -1,11 +1,34 @@
+import { useEffect } from "react";
+
 const Home = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const texts = document.querySelectorAll(".scroll-text");
+
+      texts.forEach((text) => {
+        const textPosition = text.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight;
+
+        if (textPosition < screenPosition) {
+          text.classList.add("visible");
+        } else {
+          text.classList.remove("visible");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <section
       className="flex flex-col md:flex-row items-center h-[520px] w-screen px-8 md:px-16 font-light"
       id="home"
     >
       <div className="flex flex-col gap-3 mx-auto w-5/6">
-        <h1 className="text-primary lg:text-8xl md:text-6xl text-4xl">
+        <h1 className="text-primary lg:text-8xl md:text-6xl text-4xl slide-in-from-left">
           Connor Park
         </h1>
         <p className="text-primary lg:text-2xl text-xl ml-2">
