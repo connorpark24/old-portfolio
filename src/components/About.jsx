@@ -23,14 +23,14 @@ const About = () => {
 
   return (
     <section
-      className="flex flex-col py-12 lg:py-24 md:flex-row gap-y-16 justify-between items-center lg:scroll-mt-48 px-12 md:px-16 font-light text-primary"
+      className="flex flex-col items-end py-12 lg:py-24 md:flex-row md:items-center gap-y-16 lg:scroll-mt-48 px-12 md:px-16 font-light text-primary"
       id="about"
     >
       <div className="lg:w-2/5 w-3/5">
         <img src={umlogo} className="px-4 md:px-12 xl:px-24" />
       </div>
 
-      <div className="flex flex-col md:w-3/5 text-right">
+      <div className="flex flex-col w-11/12 md:w-3/5 text-right">
         <h1 className="lg:text-3xl text-xl">Education</h1>
         <p className="lg:text-7xl md:text-5xl text-4xl mt-2 move-text">
           University of Michigan

@@ -8,7 +8,7 @@ const Tools = () => {
     >
       <div className="flex flex-col gap-8 items-center">
         <h1 className="lg:text-7xl md:text-6xl text-5xl">Toolkit</h1>
-        <div className="w-4/5 grid grid-cols-4 lg:grid-cols-6 gap-x-4 md:gap-x-8 gap-y-2 md:gap-y-4">
+        <div className="w-2/3 lg:w-1/2 grid grid-cols-4 sm:grid-cols-6 gap-x-4 md:gap-x-8 gap-y-2 md:gap-y-4">
           {technologies.map((technology, index) => (
             <div key={index} className="relative group">
               <img
