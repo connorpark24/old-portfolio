@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="flex justify-end h-24 text-primary text-md items-center lg:px-24 md:px-16">
+    <div className="flex justify-end h-24 text-white bg-primary text-md items-center lg:px-24 md:px-16">
       <div className="hidden md:flex flex-row gap-20">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
