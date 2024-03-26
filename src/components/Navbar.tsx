@@ -6,10 +6,11 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-end h-24 text-white bg-primary text-md items-center lg:px-24 md:px-16">
-      <div className="hidden md:flex flex-row gap-20">
+      <div className="hidden md:flex flex-row gap-x-16 font-noto-sans font-light">
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#toolkit">Tools</a>
+        <a href="#projects">Work</a>
+        <a href="#toolkit">Skills</a>
+        <a href="#blog">Blog</a>
       </div>
 
       <div className="flex-1 flex justify-end md:hidden mr-8">
@@ -18,16 +19,16 @@ const Navbar = () => {
           className="focus:outline-none"
         >
           <Bars3Icon
-            className="mt-1 h-6 w-6 flex-none text-primary"
+            className="mt-1 h-6 w-6 flex-none text-white"
             aria-hidden="true"
           />
         </button>
       </div>
 
       <div
-        className={`fixed top-0 right-0 h-full z-50 transform md:hidden text-white ${
+        className={`fixed top-0 right-0 h-full z-50 transform md:hidden text-primary ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
-        } transition-transform duration-300 bg-primary w-48`}
+        } transition-transform duration-300 bg-white w-48`}
       >
         <div className="p-8">
           <button

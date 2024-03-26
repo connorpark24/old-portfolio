@@ -1,9 +1,8 @@
 import { BrowserRouter } from "react-router-dom";
 import Home from "./components/Home.tsx";
-import Navbar from "./components/Navbar.jsx";
-import About from "./components/About.jsx";
-import Projects from "./components/Projects.jsx";
-import Tools from "./components/Tools.js";
+import Navbar from "./components/Navbar.tsx";
+import About from "./components/About.tsx";
+import Work from "./components/Work.tsx";
 
 const App = () => {
   return (
@@ -12,8 +11,7 @@ const App = () => {
       <div className="min-h-screen w-screen flex flex-col">
         <Home />
         <About />
-        <Projects />
-        <Tools />
+        <Work />
       </div>
     </BrowserRouter>
   );

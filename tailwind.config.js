@@ -5,8 +5,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#010110",
+        primary: "#000000",
       },
+      fontFamily: {
+        'noto-sans': ['"Noto Sans"', 'sans-serif'],
+        'karma': ['"Lora"', 'serif']
+      }
     },
   },
   plugins: [],

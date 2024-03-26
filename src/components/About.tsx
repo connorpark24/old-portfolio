@@ -1,18 +1,17 @@
 import { useEffect } from "react";
-import umlogo from "../assets/umlogo.svg";
 
 const About = () => {
   useEffect(() => {
     const handleScroll = () => {
       const textElement = document.querySelector(".move-text");
       const section = document.getElementById("about");
-      const sectionPosition = section.getBoundingClientRect().top;
+      const sectionPosition = section?.getBoundingClientRect().top ?? 0;
       const screenPosition = window.innerHeight;
 
       if (sectionPosition < screenPosition) {
-        textElement.classList.add("active");
+        textElement?.classList.add("active");
       } else {
-        textElement.classList.remove("active");
+        textElement?.classList.remove("active");
       }
     };
 
@@ -23,31 +22,31 @@ const About = () => {
 
   return (
     <section
-      className="flex flex-col items-end py-12 lg:py-24 md:flex-row md:items-center gap-y-16 lg:scroll-mt-48 px-12 md:px-16 font-light text-white bg-primary"
+      className="lg:scroll-mt-48 px-12 md:px-16  bg-white py-64"
       id="about"
     >
-      <div className="lg:w-2/5 w-3/5">
-        <img src={umlogo} className="px-4 md:px-12 xl:px-24" />
-      </div>
-
-      <div className="flex flex-col w-11/12 md:w-3/5 text-right">
-        <h1 className="lg:text-3xl text-xl">Education</h1>
-        <p className="lg:text-7xl md:text-5xl text-4xl mt-2 move-text">
+      <div className="my-auto flex flex-col items-end">
+        <h1 className="lg:text-xl text-lg text-black font-noto-sans mb-4 font-light">
+          Education
+        </h1>
+        <p className="text-black lg:text-7xl md:text-6xl text-5xl font-karma font-semibold">
           University of Michigan
         </p>
-        <p className="lg:text-3xl text-xl mt-2">Computer Science B.S.E</p>
-        <p className="lg:text-lg text-md mt-2">
+        <p className="lg:text-lg text-md  text-black font-noto-sans font-light">
+          College of Engineering, Computer Science B.S.E
+        </p>
+        <p className="lg:text-lg text-md mt-2 text-black w-1/2 text-right font-noto-sans font-light">
           Courses: Programming and Intro Data Structures, Discrete Math,
           Microprocessors and Toys, Data Structures and Algorithms, Intro to
           Computer Organization
         </p>
-        <p className="lg:text-lg text-md mt-2">
+        <p className="lg:text-lg text-md mt-2 text-black font-noto-sans font-light">
           Activities:{" "}
           <a
             href="https://v1michigan.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-normal"
+            className="font-normal underline"
           >
             V1 Michigan
           </a>
