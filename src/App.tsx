@@ -3,6 +3,7 @@ import Home from "./components/Home.tsx";
 import Navbar from "./components/Navbar.tsx";
 import About from "./components/About.tsx";
 import Work from "./components/Work.tsx";
+import BlogPreview from "./components/BlogPreview.tsx";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Home />
         <About />
         <Work />
+        <BlogPreview />
       </div>
     </BrowserRouter>
   );

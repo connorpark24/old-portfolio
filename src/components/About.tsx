@@ -26,10 +26,10 @@ const About = () => {
       id="about"
     >
       <div className="my-auto flex flex-col items-end">
-        <h1 className="lg:text-xl text-lg text-black font-noto-sans mb-4 font-light">
+        <h1 className="lg:text-xl text-lg text-black font-noto-sans mb-2 font-light">
           Education
         </h1>
-        <p className="text-black lg:text-7xl md:text-6xl text-5xl font-karma font-semibold">
+        <p className="text-black lg:text-7xl md:text-6xl text-5xl font-karma font-semibold mb-2">
           University of Michigan
         </p>
         <p className="lg:text-lg text-md  text-black font-noto-sans font-light">

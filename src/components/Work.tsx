@@ -61,17 +61,17 @@ const Work = () => {
   );
 };
 
-const Slide = ({ project }: { project: Project }) => (
-  <div className="h-[400px] rounded-xl flex flex-col font-light">
-    <div className="h-3/5">
-      <img className="p-4 h-full object-cover mx-auto my-auto" />
-    </div>
-    <div className="h-2/5 p-4 flex flex-col  text-white">
-      <p className="lg:text-3xl text-2xl">{project.name}</p>
-      <p className="text-lg">{project.tech}</p>
-      <p className="text-md mt-2">{project.description}</p>
-    </div>
-  </div>
-);
+// const Slide = ({ project }: { project: Project }) => (
+//   <div className="h-[400px] rounded-xl flex flex-col font-light">
+//     <div className="h-3/5">
+//       <img className="p-4 h-full object-cover mx-auto my-auto" />
+//     </div>
+//     <div className="h-2/5 p-4 flex flex-col  text-white">
+//       <p className="lg:text-3xl text-2xl">{project.name}</p>
+//       <p className="text-lg">{project.tech}</p>
+//       <p className="text-md mt-2">{project.description}</p>
+//     </div>
+//   </div>
+// );
 
 export default Work;
