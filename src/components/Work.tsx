@@ -7,25 +7,25 @@ interface Project {
 const Work = () => {
   const projects: Project[] = [
     {
-      name: "UpRound Ventures Platform",
+      name: "upround ventures platform",
       tech: "Next.js, TypeScript, Taiwlind, Supabase, Google OAuth",
       description:
         "Project management platform for UpRound Ventures. Includes features such as user management, task allocation, progress tracking, startup relationship management, and more",
     },
     {
-      name: "GoBrew",
+      name: "gobrew",
       tech: "React Native, Tailwind, Supabase, Zustand",
       description:
         "Social networking app for students seeking career-related advice. V1 Fall '23 Cohort Project",
     },
     {
-      name: "V1 Platform",
+      name: "v1 platform",
       tech: "Next.js, TypeScript, Taiwlind, Supabase",
       description:
         "Building Projects page for builders at Michigan to share their work.",
     },
     {
-      name: "Winston",
+      name: "winston",
       tech: "React, TypeScript, Tailwind, Flask, OpenAI API",
       description:
         "Tool that uses AI to turn PDFs into multiple choice, open-ended, or true/false practice questions.",
@@ -37,20 +37,20 @@ const Work = () => {
       className="lg:scroll-mt-40 px-8 md:px-16 lg:px-24 py-12 lg:py-24 items-center bg-primary"
       id="projects"
     >
-      <div className="my-auto flex flex-col">
+      <div className="my-auto flex flex-col items-center">
         <h1 className="lg:text-xl text-lg text-white mb-4 font-light font-noto-sans">
-          Work
+          work
         </h1>
         <div className="flex flex-col gap-y-10 w-2/3">
           {projects.map((project) => (
-            <div id={project.name}>
+            <div id={project.name} className="flex flex-col items-center">
               <p className="text-white lg:text-5xl md:text-3xl text-2xl font-karma mb-1">
                 {project.name}
               </p>
               <p className="text-white text-lg mb-1.5 font-noto-sans font-light">
                 {project.tech}
               </p>
-              <p className="text-white leading-5 font-noto-sans font-light">
+              <p className="text-white leading-5 font-noto-sans font-light text-center">
                 {project.description}
               </p>
             </div>

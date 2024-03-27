@@ -5,8 +5,8 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="flex justify-end h-24 text-white bg-primary text-md items-center lg:px-24 md:px-16">
-      <div className="hidden md:flex flex-row gap-x-16 font-noto-sans font-light">
+    <div className="flex justify-end h-24 text-white bg-primary items-center lg:px-24 md:px-16">
+      <div className="hidden md:flex flex-row gap-x-16 font-noto-sans font-light text-[0.9rem]">
         <a href="#about">About</a>
         <a href="#projects">Work</a>
         <a href="#toolkit">Skills</a>

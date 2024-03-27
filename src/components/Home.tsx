@@ -27,11 +27,11 @@ const Home = () => {
       className="flex flex-col md:flex-row py-72 w-screen px-8 md:px-16 bg-primary"
       id="home"
     >
-      <div className="flex flex-col my-auto">
-        <h1 className="text-white lg:text-9xl md:text-7xl text-6xl font-karma mb-2">
-          Connor Park
+      <div className="flex flex-col my-auto items-center w-full">
+        <h1 className="text-white lg:text-8xl md:text-6xl text-5xl font-karma mb-2">
+          connor park
         </h1>
-        <p className=" lg:text-2xl text-xl text-white font-light font-noto-sans mb-3">
+        <p className="lg:text-lg text-base text-white font-light font-noto-sans mb-3">
           Student at the University of Michigan
         </p>
         <div className="flex flex-row gap-4">

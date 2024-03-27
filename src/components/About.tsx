@@ -25,22 +25,22 @@ const About = () => {
       className="lg:scroll-mt-48 px-12 md:px-16  bg-white py-64"
       id="about"
     >
-      <div className="my-auto flex flex-col items-end">
-        <h1 className="lg:text-xl text-lg text-black font-noto-sans mb-2 font-light">
-          Education
+      <div className="my-auto flex flex-col gap-y-3 items-center">
+        <h1 className="lg:text-xl text-lg text-black font-noto-sans font-light">
+          education
         </h1>
-        <p className="text-black lg:text-7xl md:text-6xl text-5xl font-karma font-semibold mb-2">
-          University of Michigan
+        <p className="text-black lg:text-7xl md:text-6xl text-5xl font-karma font-semibold">
+          university of michigan, ann arbor
         </p>
         <p className="lg:text-lg text-md  text-black font-noto-sans font-light">
           College of Engineering, Computer Science B.S.E
         </p>
-        <p className="lg:text-lg text-md mt-2 text-black w-1/2 text-right font-noto-sans font-light">
+        <p className="lg:text-lg text-md text-black w-1/2 text-center font-noto-sans font-light">
           Courses: Programming and Intro Data Structures, Discrete Math,
           Microprocessors and Toys, Data Structures and Algorithms, Intro to
           Computer Organization
         </p>
-        <p className="lg:text-lg text-md mt-2 text-black font-noto-sans font-light">
+        <p className="lg:text-lg text-md text-black font-noto-sans font-light">
           Activities:{" "}
           <a
             href="https://v1michigan.com/"
