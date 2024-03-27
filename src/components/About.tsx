@@ -22,25 +22,25 @@ const About = () => {
 
   return (
     <section
-      className="lg:scroll-mt-48 px-12 md:px-16 bg-white py-72"
+      className="flex items-center h-screen lg:scroll-mt-48 px-12 md:px-16 bg-white"
       id="about"
     >
-      <div className="my-auto flex flex-col gap-y-3 items-center">
-        <h1 className="lg:text-xl text-lg text-black font-noto-sans font-light">
+      <div className="flex flex-col gap-y-3 items-center w-full">
+        <h1 className="lg:text-xl text-lg text-primary font-noto-sans font-light">
           education
         </h1>
-        <p className="text-black lg:text-7xl md:text-6xl text-5xl font-karma font-semibold text-center">
+        <p className="text-primary lg:text-7xl md:text-6xl text-5xl font-karma font-semibold text-center">
           university of michigan, ann arbor
         </p>
-        <p className="lg:text-lg text-md  text-black font-noto-sans font-light">
+        <p className="lg:text-lg text-md  text-primary font-noto-sans font-light">
           College of Engineering, Computer Science B.S.E
         </p>
-        <p className="lg:text-lg text-md text-black w-1/2 text-center font-noto-sans font-light">
+        <p className="lg:text-lg text-md text-primary w-1/2 text-center font-noto-sans font-light">
           Courses: Programming and Intro Data Structures, Discrete Math,
           Microprocessors and Toys, Data Structures and Algorithms, Intro to
           Computer Organization
         </p>
-        <p className="lg:text-lg text-md text-black font-noto-sans font-light">
+        <p className="lg:text-lg text-md text-primary font-noto-sans font-light">
           Activities:{" "}
           <a
             href="https://v1michigan.com/"

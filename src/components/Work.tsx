@@ -34,10 +34,10 @@ const Work = () => {
 
   return (
     <section
-      className="lg:scroll-mt-40 px-8 md:px-16 lg:px-24 py-12 lg:py-36 items-center bg-primary"
+      className="flex items-center h-screen lg:scroll-mt-40 px-8 md:px-16 lg:px-24 bg-primary"
       id="projects"
     >
-      <div className="my-auto flex flex-col items-center">
+      <div className="flex flex-col items-center w-full">
         <h1 className="lg:text-xl text-lg text-white mb-4 font-light font-noto-sans">
           work
         </h1>
