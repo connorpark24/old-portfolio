@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar.tsx";
 import About from "./components/About.tsx";
 import Work from "./components/Work.tsx";
 import BlogPreview from "./components/BlogPreview.tsx";
+import Footer from "./components/Footer.tsx";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <About />
         <Work />
         <BlogPreview />
+        <Footer />
       </div>
     </BrowserRouter>
   );

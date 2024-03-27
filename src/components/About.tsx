@@ -22,14 +22,14 @@ const About = () => {
 
   return (
     <section
-      className="lg:scroll-mt-48 px-12 md:px-16  bg-white py-64"
+      className="lg:scroll-mt-48 px-12 md:px-16 bg-white py-72"
       id="about"
     >
       <div className="my-auto flex flex-col gap-y-3 items-center">
         <h1 className="lg:text-xl text-lg text-black font-noto-sans font-light">
           education
         </h1>
-        <p className="text-black lg:text-7xl md:text-6xl text-5xl font-karma font-semibold">
+        <p className="text-black lg:text-7xl md:text-6xl text-5xl font-karma font-semibold text-center">
           university of michigan, ann arbor
         </p>
         <p className="lg:text-lg text-md  text-black font-noto-sans font-light">

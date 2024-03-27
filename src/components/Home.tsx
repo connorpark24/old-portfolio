@@ -28,11 +28,12 @@ const Home = () => {
       id="home"
     >
       <div className="flex flex-col my-auto items-center w-full">
-        <h1 className="text-white lg:text-8xl md:text-6xl text-5xl font-karma mb-2">
+        <h1 className="text-white lg:text-8xl md:text-6xl text-5xl font-karma mb-4">
           connor park
         </h1>
-        <p className="lg:text-lg text-base text-white font-light font-noto-sans mb-3">
-          Student at the University of Michigan
+        <p className="text-base text-white font-light font-noto-sans mb-4">
+          interested in full-stack development, venture capital, and michigan
+          football
         </p>
         <div className="flex flex-row gap-4">
           <a href="https://www.linkedin.com/connorpark24">

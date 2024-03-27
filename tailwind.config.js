@@ -9,7 +9,7 @@ module.exports = {
       },
       fontFamily: {
         'noto-sans': ['"Noto Sans"', 'sans-serif'],
-        'karma': ['"Lora"', 'serif']
+        'karma': ['"Crimson Pro"', 'serif']
       }
     },
   },

@@ -7,7 +7,7 @@ const BlogPreview = () => {
       <h1 className="lg:text-xl text-lg mb-4 font-light font-noto-sans">
         blog
       </h1>
-      <div className="font-noto-sans font-light py-36">coming soon...</div>
+      <div className="font-noto-sans font-light py-60">coming soon...</div>
       {/* <div className="grid grid-cols-3 gap-12 w-3/4">
         <div className="border-2 rounded-xl h-48">coming soon...</div>
       </div> */}
