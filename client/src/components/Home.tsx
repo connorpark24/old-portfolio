@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import headshot from "@/headshot.png";
+import headshot from "@/assets/headshot.png";
 
 const Home = () => {
   useEffect(() => {
@@ -32,7 +32,7 @@ const Home = () => {
       <div className="flex flex-col items-center w-full">
         <img
           src={headshot}
-          className="lg:w-64 md:w-48 w-36 rounded-full border-white lg:border-[6px] md:border-4 border-2 mb-4"
+          className="lg:w-64 md:w-48 w-36 rounded-full border-white lg:border-[6px] border-4 mb-4"
         />
         <h1 className="text-white lg:text-8xl md:text-6xl text-5xl font-karma mb-4">
           connor park
