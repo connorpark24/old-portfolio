@@ -10,13 +10,13 @@ const Work = () => {
       name: "upround ventures platform",
       tech: "Next.js, TypeScript, Taiwlind, Supabase, Google OAuth",
       description:
-        "Project management platform for UpRound Ventures. Includes features such as user management, task allocation, progress tracking, startup relationship management, and more",
+        "Project management platform for UpRound Ventures. Includes features such as user management, task allocation, progress tracking, startup relationship management, and more.",
     },
     {
       name: "gobrew",
       tech: "React Native, Tailwind, Supabase, Zustand",
       description:
-        "Social networking app for students seeking career-related advice. V1 Fall '23 Cohort Project",
+        "Social networking app for students seeking career-related advice. V1 Fall '23 Cohort Project.",
     },
     {
       name: "v1 platform",
@@ -34,23 +34,23 @@ const Work = () => {
 
   return (
     <section
-      className="flex items-center h-screen lg:scroll-mt-40 px-8 md:px-16 lg:px-24 bg-primary"
+      className="flex items-center min-h-screen lg:scroll-mt-40 px-8 md:px-16 lg:px-24 bg-primary py-24"
       id="projects"
     >
       <div className="flex flex-col items-center w-full">
-        <h1 className="lg:text-xl text-lg text-white mb-4 font-light font-noto-sans">
+        <h1 className="md:text-lg text-base text-white mb-4 font-light font-noto-sans">
           work
         </h1>
-        <div className="flex flex-col gap-y-10 w-2/3">
+        <div className="flex flex-col gap-y-10 lg:w-4/5 w-full">
           {projects.map((project) => (
             <div id={project.name} className="flex flex-col items-center">
-              <p className="text-white lg:text-5xl md:text-3xl text-2xl font-karma mb-1">
+              <p className="text-white lg:text-6xl md:text-5xl text-4xl font-karma mb-1 text-center leading-7">
                 {project.name}
               </p>
-              <p className="text-white text-lg mb-1.5 font-noto-sans font-thin">
+              <p className="text-white lg:text-lg md:text-base text-sm mb-1.5 font-noto-sans font-thin text-center">
                 {project.tech}
               </p>
-              <p className="text-white leading-5 font-noto-sans font-thin text-center">
+              <p className="text-white lg:text-base md:text-sm text-xs leading-5 font-noto-sans font-thin text-center">
                 {project.description}
               </p>
             </div>

@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import headshot from "@/headshot.png";
 
 const Home = () => {
   useEffect(() => {
@@ -24,20 +25,28 @@ const Home = () => {
 
   return (
     <section
-      className="flex flex-col md:flex-row py-72 w-screen px-8 md:px-16 bg-primary"
+      className="flex flex-col md:flex-row w-screen px-8 md:px-16 bg-primary pt-20 pb-28"
       id="home"
+      style={{ minHeight: "calc(100vh - 6rem)" }}
     >
-      <div className="flex flex-col my-auto items-center w-full">
+      <div className="flex flex-col items-center w-full">
+        <img
+          src={headshot}
+          className="w-1/6 rounded-full border-white border-[6px] mb-4"
+        />
         <h1 className="text-white lg:text-8xl md:text-6xl text-5xl font-karma mb-4">
           connor park
         </h1>
-        <p className="text-base text-white font-light font-noto-sans mb-4">
+        <p className="md:text-base text-sm text-white font-light font-noto-sans mb-4 text-center w-2/3">
           interested in full-stack development, venture capital, and michigan
           football
         </p>
         <div className="flex flex-row gap-4">
           <a href="https://www.linkedin.com/connorpark24">
-            <svg viewBox="0 0 24 24" className="h-8 w-8 fill-white ">
+            <svg
+              viewBox="0 0 24 24"
+              className="lg:h-8 lg:w-8 w-6 h-6 fill-white "
+            >
               <path d="M18.335 18.339H15.67v-4.177c0-.996-.02-2.278-1.39-2.278-1.389 0-1.601 1.084-1.601 2.205v4.25h-2.666V9.75h2.56v1.17h.035c.358-.674 1.228-1.387 2.528-1.387 2.7 0 3.2 1.778 3.2 4.091v4.715zM7.003 8.575a1.546 1.546 0 01-1.548-1.549 1.548 1.548 0 111.547 1.549zm1.336 9.764H5.666V9.75H8.34v8.589zM19.67 3H4.329C3.593 3 3 3.58 3 4.297v15.406C3 20.42 3.594 21 4.328 21h15.338C20.4 21 21 20.42 21 19.703V4.297C21 3.58 20.4 3 19.666 3h.003z" />
             </svg>
           </a>
@@ -45,7 +54,7 @@ const Home = () => {
             <svg
               viewBox="0 0 24 24"
               aria-hidden="true"
-              className="h-8 w-8 fill-white"
+              className="lg:h-8 lg:w-8 w-6 h-6 fill-white"
             >
               <path
                 fillRule="evenodd"
@@ -58,7 +67,7 @@ const Home = () => {
             <svg
               viewBox="0 0 24 24"
               aria-hidden="true"
-              className="h-8 w-8 fill-white"
+              className="lg:h-8 lg:w-8 w-6 h-6 fill-white"
             >
               <path
                 fillRule="evenodd"

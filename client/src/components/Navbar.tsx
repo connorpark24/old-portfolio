@@ -6,10 +6,10 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-end h-24 text-white bg-primary items-center lg:px-24 md:px-16">
-      <div className="hidden md:flex flex-row gap-x-16 font-noto-sans font-light text-[0.9rem]">
+      <div className="hidden md:flex flex-row lg:gap-x-16 gap-x-12 font-noto-sans font-light lg:text-sm text-xs">
         <a href="#about">About</a>
+        <a href="#about">Education</a>
         <a href="#projects">Work</a>
-        <a href="#toolkit">Skills</a>
         <a href="#blog">Blog</a>
       </div>
 
@@ -43,23 +43,23 @@ const Navbar = () => {
           <a
             href="#about"
             onClick={() => setIsMenuOpen(false)}
-            className="block py-2"
+            className="block py-2 font-noto-sans"
           >
             About
           </a>
           <a
             href="#projects"
             onClick={() => setIsMenuOpen(false)}
-            className="block py-2"
+            className="block py-2 font-noto-sans"
           >
-            Projects
+            Work
           </a>
           <a
-            href="#toolkit"
+            href="#projects"
             onClick={() => setIsMenuOpen(false)}
-            className="block py-2"
+            className="block py-2 font-noto-sans"
           >
-            Tools
+            Blog
           </a>
         </div>
       </div>
