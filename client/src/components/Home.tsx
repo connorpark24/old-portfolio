@@ -32,17 +32,17 @@ const Home = () => {
       <div className="flex flex-col items-center w-full">
         <img
           src={headshot}
-          className="w-1/6 rounded-full border-white border-[6px] mb-4"
+          className="lg:w-64 md:w-48 w-36 rounded-full border-white lg:border-[6px] md:border-4 border-2 mb-4"
         />
         <h1 className="text-white lg:text-8xl md:text-6xl text-5xl font-karma mb-4">
           connor park
         </h1>
-        <p className="md:text-base text-sm text-white font-light font-noto-sans mb-4 text-center w-2/3">
+        <p className="md:text-base text-sm text-white font-light font-noto-sans mb-4 text-center md:w-2/3 w-3/4">
           interested in full-stack development, venture capital, and michigan
           football
         </p>
         <div className="flex flex-row gap-4">
-          <a href="https://www.linkedin.com/connorpark24">
+          <a href="https://www.linkedin.com/connorpark-24">
             <svg
               viewBox="0 0 24 24"
               className="lg:h-8 lg:w-8 w-6 h-6 fill-white "

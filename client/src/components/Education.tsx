@@ -22,8 +22,8 @@ const Education = () => {
 
   return (
     <section
-      className="flex items-center min-h-screen lg:scroll-mt-48 px-12 md:px-16 py-24 bg-white"
-      id="about"
+      className="flex items-center min-h-screen px-8 md:px-16 py-24 bg-white"
+      id="education"
     >
       <div className="flex flex-col gap-y-3 items-center w-full">
         <h1 className="md:text-lg text-base text-primary font-noto-sans font-light">
@@ -32,7 +32,7 @@ const Education = () => {
         <p className="text-primary lg:text-7xl md:text-6xl text-5xl font-karma font-semibold text-center">
           university of michigan, ann arbor
         </p>
-        <p className="lg:text-lg md:text-base text-sm text-primary font-noto-sans font-light">
+        <p className="lg:text-lg md:text-base text-sm text-primary font-noto-sans font-light text-center">
           College of Engineering, Computer Science B.S.E
         </p>
         <p className="lg:text-lg md:text-base text-sm text-primary lg:w-1/2 text-center font-noto-sans font-light">

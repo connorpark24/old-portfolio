@@ -34,8 +34,8 @@ const Work = () => {
 
   return (
     <section
-      className="flex items-center min-h-screen lg:scroll-mt-40 px-8 md:px-16 lg:px-24 bg-primary py-24"
-      id="projects"
+      className="flex items-center min-h-screen px-8 md:px-16 lg:px-24 bg-primary py-24"
+      id="work"
     >
       <div className="flex flex-col items-center w-full">
         <h1 className="md:text-lg text-base text-white mb-4 font-light font-noto-sans">
