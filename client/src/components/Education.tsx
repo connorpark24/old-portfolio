@@ -35,7 +35,7 @@ const Education = () => {
         <p className="lg:text-lg md:text-base text-sm text-primary font-noto-sans font-light text-center">
           College of Engineering, Computer Science B.S.E
         </p>
-        <p className="lg:text-lg md:text-base text-sm text-primary lg:w-1/2 text-center font-noto-sans font-light">
+        <p className="lg:text-lg md:text-base text-sm text-primary lg:w-2/3 w-3/4 text-center font-noto-sans font-light">
           Courses: Programming and Intro Data Structures, Discrete Math,
           Microprocessors and Toys, Data Structures and Algorithms, Intro to
           Computer Organization
