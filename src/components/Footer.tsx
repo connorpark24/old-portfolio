@@ -2,16 +2,15 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <section
-      id="contact"
-      className="flex flex-col py-12 lg:py-28 items-center bg-primary"
-    >
-      <p className="lg:text-base text-sm text-center text-white font-light font-noto-sans">
-        &copy; {currentYear} Connor Park. All Rights Reserved.
-      </p>
-      <p className="lg:text-base text-sm text-center text-white font-light font-noto-sans mt-2">
-        Built using Next.js, TypeScript, and Tailwind CSS. Deployed on Vercel.
-      </p>
+    <section id="contact" className="py-12 lg:py-28 bg-primary w-screen">
+      <div className="flex flex-col items-center w-3/4 gap-y-2 mx-auto">
+        <p className="lg:text-base text-sm text-white font-light font-noto-sans text-center">
+          &copy; {currentYear} Connor Park. All Rights Reserved.
+        </p>
+        <p className="lg:text-base text-sm text-white font-light font-noto-sans text-center">
+          Built using Next.js, TypeScript, and Tailwind CSS. Deployed on Vercel.
+        </p>
+      </div>
     </section>
   );
 };
