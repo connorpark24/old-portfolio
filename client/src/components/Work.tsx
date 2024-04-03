@@ -43,7 +43,7 @@ const Work = () => {
         </h1>
         <div className="flex flex-col gap-y-10 lg:w-4/5 w-full">
           {projects.map((project) => (
-            <div id={project.name} className="flex flex-col items-center">
+            <div key={project.name} className="flex flex-col items-center">
               <p className="text-white lg:text-6xl md:text-5xl text-4xl font-karma mb-1 text-center leading-7">
                 {project.name}
               </p>

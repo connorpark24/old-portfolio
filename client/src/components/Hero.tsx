@@ -1,7 +1,10 @@
+"use client";
+
 import { useEffect } from "react";
+import Image from "next/image";
 import headshot from "@/assets/headshot.png";
 
-const Home = () => {
+const Hero = () => {
   useEffect(() => {
     const handleScroll = () => {
       const texts = document.querySelectorAll(".scroll-text");
@@ -30,10 +33,12 @@ const Home = () => {
       style={{ minHeight: "calc(100vh - 6rem)" }}
     >
       <div className="flex flex-col items-center w-full">
-        <img
+        <Image
           src={headshot}
+          alt="Headshot"
           className="lg:w-64 md:w-48 w-36 rounded-full border-white lg:border-[6px] border-4 mb-4"
         />
+
         <h1 className="text-white lg:text-8xl md:text-6xl text-5xl font-karma mb-4">
           connor park
         </h1>
@@ -82,4 +87,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Hero;
