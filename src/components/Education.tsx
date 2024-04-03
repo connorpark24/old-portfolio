@@ -1,26 +1,4 @@
-"use client";
-import { useEffect } from "react";
-
 const Education = () => {
-  useEffect(() => {
-    const handleScroll = () => {
-      const textElement = document.querySelector(".move-text");
-      const section = document.getElementById("about");
-      const sectionPosition = section?.getBoundingClientRect().top ?? 0;
-      const screenPosition = window.innerHeight;
-
-      if (sectionPosition < screenPosition) {
-        textElement?.classList.add("active");
-      } else {
-        textElement?.classList.remove("active");
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <section
       className="flex items-center min-h-screen px-8 md:px-16 py-24 bg-white"
@@ -33,21 +11,21 @@ const Education = () => {
         <p className="text-primary lg:text-7xl md:text-6xl text-5xl font-karma font-semibold text-center">
           university of michigan, ann arbor
         </p>
-        <p className="lg:text-lg md:text-base text-sm text-primary font-noto-sans font-light text-center">
+        <p className="lg:text-lg text-base text-primary font-noto-sans font-light text-center">
           College of Engineering, Computer Science B.S.E
         </p>
-        <p className="lg:text-lg md:text-base text-sm text-primary lg:w-2/3 w-3/4 text-center font-noto-sans font-light">
+        <p className="lg:text-lg text-base text-primary lg:w-2/3 w-3/4 text-center font-noto-sans font-light">
           Courses: Programming and Intro Data Structures, Discrete Math,
           Microprocessors and Toys, Data Structures and Algorithms, Intro to
           Computer Organization
         </p>
-        <p className="lg:text-lg md:text-base text-sm text-primary font-noto-sans font-light">
+        <p className="lg:text-lg text-base text-primary font-noto-sans font-light">
           Activities:{" "}
           <a
             href="https://v1michigan.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-normal underline"
+            className="font-medium"
           >
             V1 Michigan
           </a>
@@ -56,7 +34,7 @@ const Education = () => {
             href="https://www.upround.vc/"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-normal"
+            className="font-medium"
           >
             UpRound Ventures
           </a>

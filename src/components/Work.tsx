@@ -41,16 +41,19 @@ const Work = () => {
         <h1 className="md:text-lg text-base text-white mb-4 font-light font-noto-sans">
           work
         </h1>
-        <div className="flex flex-col gap-y-10 lg:w-4/5 w-full">
+        <div className="flex flex-col gap-y-10 lg:w-3/5 w-full">
           {projects.map((project) => (
-            <div key={project.name} className="flex flex-col items-center">
-              <p className="text-white lg:text-6xl md:text-5xl text-4xl font-karma mb-1 text-center leading-7">
+            <div
+              key={project.name}
+              className="flex flex-col items-center gap-y-2"
+            >
+              <p className="text-white lg:text-6xl text-5xl font-karma text-center leading-10">
                 {project.name}
               </p>
-              <p className="text-white lg:text-lg md:text-base text-sm mb-1.5 font-noto-sans font-thin text-center">
+              <p className="text-white lg:text-lg text-base font-noto-sans font-thin text-center">
                 {project.tech}
               </p>
-              <p className="text-white lg:text-base md:text-sm text-xs leading-5 font-noto-sans font-thin text-center">
+              <p className="text-white lg:text-lg text-base  leading-5 font-noto-sans font-thin text-center">
                 {project.description}
               </p>
             </div>
