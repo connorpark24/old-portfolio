@@ -4,21 +4,14 @@ import headshot from "@/assets/headshot.png";
 const Hero = () => {
   return (
     <section
-      className="flex flex-col md:flex-row w-screen px-8 md:px-16 bg-primary pt-20 pb-28"
+      className="flex flex-col gap-y-8 lg:flex-row items-center w-screen h-screen bg-primary px-16 py-32 lg:py-16"
       id="home"
-      style={{ minHeight: "calc(100vh - 6rem)" }}
     >
-      <div className="flex flex-col items-center w-full">
-        <Image
-          src={headshot}
-          alt="Headshot"
-          className="lg:w-64 md:w-48 w-36 rounded-full border-white lg:border-[6px] border-4 mb-4"
-        />
-
-        <h1 className="text-white lg:text-8xl text-6xl font-karma mb-4">
+      <div className="flex flex-col items-center lg:items-start lg:w-1/2 w-full justify-end order-2 lg:order-1 h-full">
+        <h1 className="text-white lg:text-left text-center xl:text-8xl text-6xl font-karma mb-4">
           connor park
         </h1>
-        <p className="md:text-lg text-base text-white font-light font-noto-sans mb-4 text-center md:w-2/3 w-3/4">
+        <p className="lg:text-xl text-lg text-white lg:text-left text-center font-light font-noto-sans mb-4 md:w-full">
           interested in full-stack development, venture capital, and michigan
           football
         </p>
@@ -57,6 +50,15 @@ const Hero = () => {
               />
             </svg>
           </a>
+        </div>
+      </div>
+      <div className="lg:w-1/2 order-1 lg:order-2">
+        <div className="w-3/5 mx-auto">
+          <Image
+            src={headshot}
+            alt="Headshot"
+            className="border-white lg:border-[6px] border-4 rounded-full"
+          />
         </div>
       </div>
     </section>

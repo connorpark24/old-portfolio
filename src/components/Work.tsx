@@ -8,25 +8,25 @@ const Work = () => {
   const projects: Project[] = [
     {
       name: "upround ventures platform",
-      tech: "Next.js, TypeScript, Taiwlind, Supabase, Google OAuth",
+      tech: "Next.js, TypeScript, Tailwind CSS, Supabase, Google OAuth",
       description:
         "Project management platform for UpRound Ventures. Includes features such as user management, task allocation, progress tracking, startup relationship management, and more.",
     },
     {
       name: "gobrew",
-      tech: "React Native, Tailwind, Supabase, Zustand",
+      tech: "React Native, Expo, Supabase, Zustand",
       description:
         "Social networking app for students seeking career-related advice. V1 Fall '23 Cohort Project.",
     },
     {
       name: "v1 platform",
-      tech: "Next.js, TypeScript, Taiwlind, Supabase",
+      tech: "Next.js, TypeScript, Taiwlind CSS, Supabase",
       description:
         "Building Projects page for builders at Michigan to share their work.",
     },
     {
       name: "winston",
-      tech: "React, TypeScript, Tailwind, Flask, OpenAI API",
+      tech: "React, TypeScript, Tailwind CSS, Flask, OpenAI API",
       description:
         "Tool that uses AI to turn PDFs into multiple choice, open-ended, or true/false practice questions.",
     },
@@ -34,11 +34,11 @@ const Work = () => {
 
   return (
     <section
-      className="flex items-center min-h-screen px-8 md:px-16 lg:px-24 bg-primary py-24"
+      className="flex items-center min-h-screen px-8 md:px-16 lg:px-24 bg-white py-24"
       id="work"
     >
       <div className="flex flex-col items-center w-full">
-        <h1 className="md:text-lg text-base text-white mb-4 font-light font-noto-sans">
+        <h1 className="md:text-lg text-base text-primary mb-4 font-noto-sans">
           work
         </h1>
         <div className="flex flex-col gap-y-10 lg:w-3/5 w-full">
@@ -47,13 +47,13 @@ const Work = () => {
               key={project.name}
               className="flex flex-col items-center gap-y-2"
             >
-              <p className="text-white lg:text-6xl text-5xl font-karma text-center leading-10">
+              <p className="text-primary lg:text-6xl text-5xl font-karma text-center leading-10">
                 {project.name}
               </p>
-              <p className="text-white lg:text-lg text-base font-noto-sans font-thin text-center">
+              <p className="text-primary lg:text-lg text-base font-noto-sans  font-light text-center">
                 {project.tech}
               </p>
-              <p className="text-white lg:text-lg text-base  leading-5 font-noto-sans font-thin text-center">
+              <p className="text-primary lg:text-lg text-base  leading-5 font-noto-sans font-light  text-center">
                 {project.description}
               </p>
             </div>

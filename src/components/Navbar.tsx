@@ -7,8 +7,8 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="flex justify-end h-24 text-white bg-primary items-center lg:px-24 md:px-16">
-      <div className="hidden md:flex flex-row lg:gap-x-16 gap-x-12 font-noto-sans font-light lg:text-sm text-xs">
+    <div className="absolute w-full flex justify-end h-24 text-white bg-primary items-center lg:px-24 md:px-16">
+      <div className="hidden md:flex flex-row lg:gap-x-16 gap-x-12 font-noto-sans font-light text-sm">
         <a href="#education">Education</a>
         <a href="#work">Work</a>
         <a href="#blog">Blog</a>
